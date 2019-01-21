@@ -16,3 +16,11 @@ def load_user(id):
 @login.unauthorized_handler
 def unauthorized():
     return redirect(url_for('login'))
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/start/')
+def start():
+    return render_template('start.html', url='/start')
