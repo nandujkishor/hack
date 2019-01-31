@@ -7,10 +7,10 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(120), unique=True)
     fname = db.Column(db.String(30))
     lname = db.Column(db.String(30))
-    ppic = db.Column(db.String(200))
     sex = db.Column(db.Integer)
     institution = db.Column(db.String(100))
     school = db.Column(db.Boolean)
+    status = db.Column(db.Integer)
     time_created = db.Column(db.DateTime, nullable=False, default=datetime.now)
     lastseen = db.Column(db.DateTime)
 

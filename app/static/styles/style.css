@@ -1,0 +1,126 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+p {
+    margin: 1em 0;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 2px transparent solid;
+    color: #fff;
+}
+
+a:hover {
+	border-bottom: 2px #fff solid;
+}
+
+.container{
+	display: grid;
+	height: 100vh;
+	width: 100%;
+	grid-template-rows: 80px auto;
+	grid-template-columns: 180px auto 180px;
+	grid-template-areas: 
+	"logo . menu"
+	". main .";
+	color: #fff;
+	background-color: #003f34;
+}
+
+.logo, .menu, .main{
+	width: 100%;
+	height: 100%;
+}
+
+.logo, .menu{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em;
+}
+
+.logo{
+	grid-area: logo;
+}
+	
+.menu{
+	grid-area: menu;
+}
+	
+.main{
+	grid-area: main;
+	display: grid;
+	grid-template-rows: 40% 60%;
+}
+
+.main-two, .main-one {
+	display: grid;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+.type-t {
+    font-size: 2em;    
+}
+
+.main-two-container-one h1{
+    font-size: 3em;
+    /* font-weight: 400; */
+}
+
+.main-two-container-one span{
+    font-size: 1.5em;
+    display: block;
+}	
+
+.main-two-container-one h2{
+	padding-top: 20px;
+	font-size: 2.5em;
+}
+
+.b2 {
+	background-color: #fff;
+	height: 100vh;
+	color: #000;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.b2-container{
+	font-size: 3.5em;
+}
+
+button{ 
+	height: 40px;
+	padding: 5px;
+    width: 100px;
+	background: #00cc00;
+	color: #fff;
+	cursor: pointer;
+	border: 2px solid  #00cc00;
+	transition: 0.2s;
+}
+
+button:hover{
+	width: 100px;
+	background: #fff;
+	color: #000;
+	border: 2px solid  #000;
+}
