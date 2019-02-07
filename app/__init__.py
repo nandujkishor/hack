@@ -11,3 +11,6 @@ app.config.from_object(Config)
 # login = LoginManager(app)
 
 from app import routes
+from app.connect import connect
+
+app.register_blueprint(connect, url_prefix='/connect')
