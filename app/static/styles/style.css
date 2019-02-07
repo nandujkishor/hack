@@ -69,13 +69,18 @@ a:hover {
 	grid-template-rows: 40% 60%;
 }
 
-.main-two, .main-one {
+.main-two/*, .main-one*/{
 	display: grid;
+	height: 100%;
 	/* justify-content: center; */
 	align-items: center;
 }
 
+.main-one{
+	margin-top: 200px;
+}
 .type-t {
+	width: 500px;
     font-size: 2em;    
 }
 
@@ -92,6 +97,17 @@ a:hover {
 .main-two-container-one h2{
 	padding-top: 20px;
 	font-size: 2.5em;
+}
+
+.typing{
+	border-right: .05em solid;
+	animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+	50% {
+	border-color: transparent;
+	}
 }
 
 .b2 {
