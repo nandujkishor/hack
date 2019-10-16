@@ -1,3 +1,3 @@
 # hack
 
-A hackathon management system.
+A complete hackathon management system.
